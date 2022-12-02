@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>quiz</title>
+</head>
+<body class="screen">
+
+    <div id="homebtn">
+        <button class="home_btn hidden">Home</button>
+    </div>
+
+    <div class="hide_page hide">
+        <header class="header1">
+            <div class="header_container">
+                <nav class="menu_list">
+                    <ul>
+                        <li><p class="home_page main_page">Home</p></li>
+                        <li><p class="game_page main_page">Games</p></li>
+                        <li><p class="record_page main_page">Records</p></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="section1">
+            <div class="text">
+                <img src="images/kizi.png" alt="#">
+                <p class="marine_margushi">
+                    Let's have fun
+                    <br>
+                    Play Games
+                </p>
+            </div>
+            
+            <div class="button_container">
+                <button type="button" class="button_info">About us</button>
+            </div>
+            
+            <h1 style="text-align: center;" class="title">Our Games</h1>
+            <div class="About_us hide">
+                <button class="close_btn">&times;</button>
+                <p class="info">
+                    ჩემს საიტზე მოცემულია სამი თამაში, რომელთა არჩევა შესაძლებელია სურვილისამებრ. 
+                    მოცემული თამაშების კონტეინერი თავდაპირველად დამალულია და სანამ არ დავაკლიკებთ 
+                    სახელწოდებას, მანამ არ გაჩნდება. როდესაც მთავარ გვერდზე დაბრუნება გვსურს ვაკლიკებთ Home ღილაკს  თამაშის აღწერა: <br>
+                    Dice Game: ეს თამაში განკუთვნილია 2 მოთამაშისთვის, სადაც მოთამაშეები აგროვებენ ქულებს. ვინც პირველი ააგროვებს 20 ქულას 
+                    ისაა გამარჯვებული. თუ კამათელი იქნება ერთიანი, მაშინ აგროვებული ქულები განულდება და თამაშს მეორე მოთამაშე იწყებს.იმ შემთხვევაში 
+                    თუ გვსურს აგროვებული ქულები შევინახოთ, უნდა დავაკლიკოთ Hold ღილაკს და სვლას მეორე მოთამაშე დაიწყებს. 
+                    თამაშის თავიდან დასაწყებად ვაკლიკებთ New game. <br>
+                    Dino Game: ერთ-ერთი ყველაზე ცნობილი თამაში, რომლის მთავარი მიზანია მოთამაშე გაართოს უინტერნეტობისას :) იმისთვის რომ თამაში
+                    დავიწყოთ საჭიროა სწორად შევიყვანოთ YES(წინააღმდეგ შემთხვევაში პროგრამა გამმეორებით მოგვთხოვს ჩაწერას) თამაშის დასრულება ხდება 
+                    NO ჩანაწერის განხორციელებით, რის შედეგადაც ეკრანზე გამოდის მაქსიმალური ქულა, მიმდინარე ქულა და Alert ფანჯარაში თამაშის განმეორებათა რაოდენობა. <br>
+                    Tic Tac Toe: ყველასთვის ნაცნობი თამაში, რომლის დაწერის მთავრი მიზანი იყო ლოგიკური უნარჩვევების განვითარება. მოცემული თამაში განკუთვნილია ორი მოთამაშისათვის სამი ერთნაირი სიმბოლოს დასმით მოთამაშე გამარჯვებულია.
+                </p>
+            </div>
+            <div class="images">
+                <div class="flex">
+                    <img src="images/dice.jpg" alt="#">
+                    <img src="images/dino.png" alt="#">
+                    <img src="images/ttt.png" alt="#">
+                </div>
+            </div>
+            <div class="overlay hide">
+                
+            </div>
+        </section>
+        <footer class="footer1">
+
+        </footer>
+    </div>
+
+       <!-- our games--> 
+        <div class="hidden_games"> 
+            <div class="hideButton">
+                <button class="show">Dice Game</button>
+                <button class="show">Dino Game</button>
+                <button class="show">Tic Tac Toe</button>
+            </div>
+            
+            <div class="hiddenDice">
+                <button class="dice_home_btn" type="button">Home</button>
+
+                <main>
+                    <section class="player player--0 player--active">
+                        <h2 class="name" id="name--0">Player 1</h2>
+                    <p class="score" id="score--0">43</p>
+                    <div class="current">
+                        <p class="current-label">Current</p>
+                        <p class="current-score" id="current--0">0</p>
+                    </div>
+                </section>
+                <section class="player player--1">
+                    <h2 class="name" id="name--1">Player 2</h2>
+                    <p class="score" id="score--1">24</p>
+                    <div class="current">
+                        <p class="current-label">Current</p>
+                        <p class="current-score" id="current--1">0</p>
+                    </div>
+                </section>
+                <img src="images/dice-1.png" alt="Dice" class="dice hidden dice_img" />
+                <button class="btn btn--new">⚔ New Game</button>
+                <button class="btn btn--roll">🎲 Roll Dice</button>
+                <button class="btn btn--hold">🕹 Hold</button>
+            </main>
+        </div>
+        <div class="hiddenDino">
+            <div class="game">
+                <button class="dino_home_btn" type="button">Home</button>
+                <hr class="track hiddenDinoGame">
+                
+                <div class="dino hiddenDinoGame">
+                    <img src="images/dinostay.png" alt="dino" class="dinoimg">
+                </div>
+                
+                <div class="cactus hiddenDinoGame"></div>
+                
+                <div class="count hiddenDinoGame">
+                    <p class="scoreDino"><span>Score:</span> 0 </p>
+                    <p class="gameOverRecord hiddenDinoGame">fghj</p>
+                </div>
+                
+                <div class="record">
+                    <p class="highest_value hiddenDinoGame"> <span>Record: </span> 0</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="ttt" id="ttt">
+        <div class="game">
+            <button class="TTT_home_btn" type="button">Home</button>
+            <div id="cellContainer">
+                <div class="cell cell0"></div>
+                <div class="cell cell1"></div>
+                <div class="cell cell2"></div>
+                <div class="cell cell3"></div>
+                <div class="cell cell4"></div>
+                <div class="cell cell5"></div>
+                <div class="cell cell6"></div>
+                <div class="cell cell7"></div>
+                <div class="cell cell8"></div>
+            </div>
+            
+            <button class="restartBtn">Restart</button>
+            <p class="statusText">X's turn</p>
+            <!-- <p class="x"></p>
+            <p class="o"></p> -->
+        </div>
+    </div>
+    <div class="records hidden">
+            <table class="table hide">
+                <tr>
+                    <th colspan="5">Games</th>
+                    
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>Player 1</td>
+                    <td>Player 2</td>
+                    <td>Attempt</td>
+                    <td>Highest score</td>
+                  </tr>
+                  <tr>
+                    <td>Dice Game</td>
+                    <td class="Dice_player_1"></td>
+                    <td class="Dice_player_2"></td>
+                    <td class="Dice_result"></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Dino Game</td>
+                    <td></td>
+                    <td></td>
+                    <td class="Dino_attempt"></td>
+                    <td class="Dino_result"></td>
+                  </tr>
+                  <tr>
+                    <td>Tic Tac Toe</td>
+                    <td class="TTT_player_1"></td>
+                    <td class="TTT_player_2"></td>
+                    <td class="TTT_result"></td>
+                    <td></td>
+                  </tr>
+            </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
